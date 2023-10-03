@@ -1,0 +1,268 @@
+/* STYLES RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #448C74;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  top: 4px;
+  right: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #448C74;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #448C74;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.symbol {
+  color: #448C74;
+}
+
+/*UKRYCIE!!!!*/
+
+.submenu {
+  display: none;
+}
+
+.container {
+  background-color: olivedrab;
+  min-height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  justify-content: space-around;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  background-color: #121519;
+  color: #e8e8e8;
+
+}
+
+.nav_menu {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 55vw;
+  color: #e8e8e8;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.symbol {
+  margin-right: 8px;
+}
+
+.menu {
+  display: flex;
+  /* background-color: red; */
+  min-width: 500px;
+  font-size: 16px;
+}
+
+.logo {
+  color: #e8e8e8;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.menu_element {
+
+  padding-right: 20px;
+}
+
+.menu_element a {
+  color: #e8e8e8;
+}
+
+.menu_element a:hover {
+  color: #448C74;
+  transition: 0.3s;
+}
+
+.menu_items {
+  /* background-color: red; */
+  display: flex;
+  width: 40vw;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hamburger-menu {
+  display: none;
+  color: #e8e8e8;
+}
+
+.dark-mode {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  background-color: #448C74;
+  border-radius: 0.45rem;
+  height: 30px;
+  padding: 7px 20px 15px 20px;
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+.first-section {
+  display: inline-block;
+  background-color: #121519;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10vh;
+  padding-bottom: 15vh;
+}
+
+.around-image {
+  height: 51px;
+}
+
+h1 {
+  font-size: 80px;
+  color: #e8e8e8;
+}
+
+.first-section p {
+  font-size: 20px;
+  color: #e8e8e8;
+}
+
+.first-section__image {
+  display: block;
+  position: absolute;
+  height: 100vh;
+}
+
+
+@media (max-width: 968px) {
+  .menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    margin-left: 16px;
+  }
+
+
+
+}
